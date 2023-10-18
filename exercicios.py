@@ -6,22 +6,16 @@ inteiro, informe que não é um número inteiro.
 
 num = input("digite um numero inteiro\n")
 
+if num.isdigit:
 
-if "." in num:
-    print("seu numero não é inteiro")
-
-else:
-    
-    num = int(num)
-    if num % 2 == 0:
-
-        print("o numero digitado é par")
-
-
-    else:
-
-     print("o numero digitado é impar")
-
+    try:
+        num = int(num)
+        if num % 2 == 0:
+            print("o numero digitado é par")
+        else:
+            print("o numero digitado é impar")
+    except:
+        print("seu numero não é inteiro")
 
 
 
@@ -48,20 +42,20 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
 
-# nome = input("digite o seu nome\n")
+nome = input("digite o seu nome\n")
 
-# letras = len(nome)
+letras = len(nome)
 
 
-# if letras == 4:
-#     print("seu nome é curto")
+if letras == 4:
+    print("seu nome é curto")
 
-# elif letras == 5 or letras == 6:
+elif letras == 5 or letras == 6:
 
-#     print("Seu nome é normal")
+    print("Seu nome é normal")
 
-# else:
+else:
 
-#     print("seu nome é mto grande")
+    print("seu nome é mto grande")
 
 
