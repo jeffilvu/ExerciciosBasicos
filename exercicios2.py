@@ -4,7 +4,7 @@
 import random
 import string
 
-senha= input('digite sua senha: ') 
+senha= input('digite sua senha:\n ') 
 #     -11...
 
 indice = 0
