@@ -1,27 +1,33 @@
 # clculadora com o while
 
-num1 = input("digite o primeiro valor: ")
-num2 = input("digite o segundo valor: ")
-operador = input("digite o operador (/, * , -, +): ")
-num1 = float(num1)
-num2 = float(num2)
+sair = "n"
 
-while operador == "/":
+while sair == "n":
 
-    resultado = num1/num2
-    break
+    num1 = input("digite o primeiro valor: ")
+    num2 = input("digite o segundo valor: ")
+    operador = input("digite o operador (/, * , -, +): ")
+    num1 = float(num1)
+    num2 = float(num2)
+    while operador == "/":
 
-while operador == "*":
+        resultado = num1/num2
+        break
 
-    resultado = num1*num2
-    break
+    while operador == "*":
 
-while operador == "+":
-    resultado = num1+num2
-    break
+        resultado = num1*num2
+        break
 
-while operador == "-":
-    resultado = num1-num2
-    break
+    while operador == "+":
+        resultado = num1+num2
+        break
 
-print(resultado)
+    while operador == "-":
+        resultado = num1-num2
+        break
+
+    print(resultado)
+    sair = input("deseja sair? \"s\" ou \"n\": ")
+
+
