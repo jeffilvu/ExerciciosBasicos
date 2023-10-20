@@ -7,46 +7,44 @@ resultado = ''
 
 while sair == "n":
         
-        num1 = input("digite o primeiro valor: ")
-        num2 = input("digite o segundo valor: ")
-        operador = input("digite o operador (/, * , -, +): ")
+    num1 = input("digite o primeiro valor: ")
+    num2 = input("digite o segundo valor: ")
+    operador = input("digite o operador (/, * , -, +): ")
 
-        try:
-            num1 = float(num1)
-            num2 = float(num2)
-            numvalidos = True
+    try:
+        num1 = float(num1)
+        num2 = float(num2)
+        numvalidos = True
 
-        except:
-            numvalidos = False
+    except:
+        numvalidos = False
 
+    if numvalidos:
 
+        if operador == "/":
 
+            resultado = num1/num2
+                    
 
-        if numvalidos:
+        elif operador == "*":
 
-            while operador == "/":
+            resultado = num1*num2
+                        
 
-                resultado = num1/num2
-                break
+        elif operador == "+":
+            resultado = num1+num2
+                        
 
-            while operador == "*":
-
-                resultado = num1*num2
-                break
-
-            while operador == "+":
-                resultado = num1+num2
-                break
-
-            while operador == "-":
-                resultado = num1-num2
-                break
-
-
-
-        else:
-            print("algum numero digitado é invalido")
-            sair = "n"
+        elif operador == "-":
+            resultado = num1-num2
 
         print(resultado)
+                  
+    else:
+        print("algum numero digitado é invalido")
+        sair = "n"
+
+    sair = input("deseja sair? \"s\" ou \"n\": ")
+
+    while sair != "n" and sair != "s":
         sair = input("deseja sair? \"s\" ou \"n\": ")
