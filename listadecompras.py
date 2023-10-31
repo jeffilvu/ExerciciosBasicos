@@ -40,7 +40,7 @@ while True:
             print('ITEM EXCLUIDO!')
             for i, item in enumerate(listaDeCompras):
                 print(i, item)
-        except TypeError:
+        except ValueError:
             print('Digite apenas o índice do produto na lista')
             
         except IndexError:
