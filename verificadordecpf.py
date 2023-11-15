@@ -47,6 +47,8 @@ contrário disso:
     resultado é o valor da conta
 O primeiro dígito do CPF é 7
 """
+
+
 multp = 10
 somaDigitos=0
 primeiroDigito = 0
